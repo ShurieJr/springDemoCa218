@@ -12,6 +12,7 @@ public class HelloController {
     @GetMapping("/")
    public String greeting(Model model){
         model.addAttribute("name", "Abdirahman");
+        model.addAttribute("paragraph" , "jamhuriya university!");
         return "hello"; // view name
     }
     @GetMapping("/hello")
